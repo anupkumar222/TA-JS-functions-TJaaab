@@ -80,25 +80,22 @@ isLeapYear(2000); // true
 isLeapYear(2001); // false
 */
 function isLeapYear (year) {
-  if (year % 400 == 0) {
+  if (year % 400 === 0) 
     return true;
-  } else if (year % 4 == 0) {
-    return true;
-  } else if (year % 100 == 0) {
-    return true;
-  } else {
-    return false
-  }
+    else if (year % 100 === 0) 
+    return false;
+  return year % 4 === 0;
 }
 isLeapYear(2022);
+
 /*
 6. Create a function named `getFactorial` that accepts a number and return the factorial of the number.
 */
 function getFactorial(number) {
-   let temp = 1;
-   for(i = number; i > 0; i--) {
-    temp = temp * i;
+   let final = 1;
+   for(i = number; i >= 1; i--) {
+    final *=  i;
    }
-   return temp;
+   return final;
 }
  getFactorial(5);
