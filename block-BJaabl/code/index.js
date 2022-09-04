@@ -99,3 +99,4 @@ function getFactorial(number) {
    return final;
 }
  getFactorial(5);
+
