@@ -252,7 +252,7 @@ let oddOrEven = function(number) {
 oddOrEven(10);
 
 // - Write an Arrow Function without curly brackets (hint: use ternary operator)
-let oddOrEven = (number) => (number % 2 === 0) ? true : false;
+let oddOrEven = (number) => (number % 2 === 0) ? `Number is even` : `Number is odd`;
 oddOrEven(25);
 
 // - Write an Arrow Function with curly brackets
